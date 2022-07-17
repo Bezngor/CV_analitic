@@ -2,90 +2,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Vladimir CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="avatar.jpg" alt="Тут должна быть моя фотка...))" width="200">
-            </td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img src="avatar.jpg" alt="Тут должна быть моя фотка...))" class="avatar">
+
+            <div class="info-text">
                 <h1>Владимир Безносов</h1>
-    <p><em>Я являюсь <strong> бизнес-аналитиком</strong></em></p>
-    <p>Я люблю путешествовать, заниматься спортом и программировать.</p>
-            </td>
-        </tr>
-    </table>
-    
-    <hr>
+                <p>Я являюсь <strong> бизнес-аналитиком</strong></p>
+                <p>Я люблю путешествовать, заниматься спортом и программировать.</p>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://vk.com/id696853655" target="_blank">ВКонтакте</a></li>
-        <li><a href="https://t.me/ProbaloMas" target="_blank">Телеграм</a></li>
-    </ul>
+                <h4>Мои социальные сети</h4>
+                <a href="https://vk.com/id696853655" target="_blank">ВКонтакте</a>
+                |
+                <a href="https://t.me/ProbaloMas" target="_blank">Телеграм</a>
+            </div>
+        </div>
 
-    <hr>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Прогулки на велосипеде</li>
+                <li>История, политика, космос</li>
+            </ol>
+        </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Путешествия</li>
-        <li>Прогулки на велосипеде</li>
-        <li>История, политика, космос</li>
-    </ol>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>ГЕДЕОН, Казахстан</td>
+                    <td>Заместитель даректора</td>
+                    <td>2011 - 2012</td>
+                </tr>
+                <tr>
+                    <td>COEFE, Spain</td>
+                    <td>Manager</td>
+                    <td>2012 - 2016</td>
+                </tr>
+                <tr>
+                    <td>МИДЭКС ГРУПП, Россия</td>
+                    <td>Директор по развитию</td>
+                    <td>2017 - ...</td>
+                </tr>
+            </table>
+        </div>
 
-    <hr>
+        <div class="card bg-red">
+            <h2>Мои проекты</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=bmS4Xz5JGn0" target="_blank">Пример</a></li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=UOKxyTRv0Bo" target="_blank">YouGile</a>
+                </li>
+            </ul>
+        </div>
 
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>ГЕДЕОН, Казахстан</td>
-            <td>Заместитель даректора</td>
-            <td>2011 - 2012</td>
-        </tr>
-        <tr>
-            <td>COEFE, Spain</td>
-            <td>Manager</td>
-            <td>2012 - 2016</td>
-        </tr>
-        <tr>
-            <td>МИДЭКС ГРУПП, Россия</td>
-            <td>Директор по развитию</td>
-            <td>2017 - ...</td>
-        </tr>
-    </table>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/index.htmls">
 
-    <hr>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
 
-    <h2>Мои проекты</h2>
-    <a href="projects.html" target="_blank">Посмотреть проекты</a>
-    
-    <hr>
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" placeholder="Введите email...">
+                    </div>
+                </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
+                <div class="form-group">
+                    <label for="text">Ваше сообщение</label>
+                    <br>
+                    <textarea name="" id="text" cols="10" rows="5"></textarea>
+                </div>
 
-        <br>
-
-        <label for="email">Ваше email</label>
-        <input type="email" id="email" placeholder="Введите email...">
-
-        <br>
-
-        <label for="text">Ваше сообщение</label>
-        <br>
-        <textarea name="" id="text" cols="30" rows="10"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться!">
-    </form>
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
